@@ -1,0 +1,13 @@
+{
+  "name": "pdftotext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "read:text": "node pdfToText.js",
+    "read:image": "node pdfToImage.js"
+  },
+  "dependencies": {
+    "pdf-to-text": "^0.0.7"
+  }
+}
