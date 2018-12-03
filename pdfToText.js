@@ -1,5 +1,7 @@
-var pdfUtil = require("pdf-to-text"); //https://www.npmjs.com/package/pdf-to-text
-var pdf_path = __dirname + "/pdfs/sample.pdf";
+let pdfUtil = require("pdf-to-text"); //https://www.npmjs.com/package/pdf-to-text
+let path = require('path');
+
+let pdf_path = path.join(__dirname, "pdfs", "sample.pdf");
 pdfUtil.pdfToText(pdf_path, (err, data) => {
   if (err) throw err;
   //data represents a string of the texts extracted from the pdf file
